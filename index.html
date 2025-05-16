@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB Automotores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RGB Automotores</h1>
+
+    <table id="autosTable">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí con JS -->
+        </tbody>
+    </table>
+
+    <form id="autoForm">
+        <label for="marca">Marca:</label><br>
+        <input type="text" id="marca"><br>
+
+        <label for="modelo">Modelo:</label><br>
+        <input type="text" id="modelo"><br>
+
+        <label for="anio">Año:</label><br>
+        <input type="number" id="anio" min="1886"><br>
+
+        <label for="color">Color:</label><br>
+        <select id="color">
+            <option value="">Seleccione un color</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+        </select><br><br>
+
+        <button type="button" id="agregarBtn">Agregar</button>
+    </form>
+
+    <h2 id="advertencia" class="oculto">Revisar formulario</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
